@@ -1,0 +1,35 @@
+.tamano{
+    width: 100%;
+    height: 700xp;
+}
+table {
+    height: 50%;
+    border:1px solid blue;
+    border-collapse: collapse;
+}
+td{
+    width: 20%;
+}
+#historial{
+ width: 98%;
+
+}
+#actual{
+    min-width: 100%;
+    border:1px solid blue;
+}
+#resultado{
+    min-width: 100%;
+    border:1px solid blue;
+}
+button {
+    width: 100%;
+    font-size: 200%;
+}
+#C {
+    color: red;
+}
+#suma
+{
+    min-height: 100%;
+}

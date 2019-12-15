@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <!--<link rel="stylesheet" href="estilo.css">-->
+    <link rel="stylesheet" href="../CSS/bootstrap.css">
+
+
+    <script src="../JS/calculadora2.js"></script>
+    <script src="../JS/bootstrap.min.js"></script>
+
+    <style>
+        body {
+            background-image: url(https://www.missconversion.es/wp-content/uploads/2015/01/kpi%C2%B4s.jpeg);
+        }
+
+        .tecla {
+            height: 3.5rem;
+            width: 100%;
+        }
+
+        textarea {
+            width: inherit;
+            height: 5rem;
+            resize: none;
+            font-size: 1.5rem;
+        }
+
+        .fuente {
+            font-family: monospace;
+            font-size: 2rem;
+        }
+
+        .btn {
+            font-size: 1.5rem;
+        }
+    </style>
+
+
+</head>
+
+<body>
+    <div class="fuente mt-5">
+        <div class="col-10 col-sm-6 col-md-5 col-lg-4 col-xl-3 
+        border border-dark rounded bg-info mx-auto mt-5">
+            <div class="row">
+                <div class="col-12"><textarea rows="5" readonly id="historial"></textarea></div>
+            </div>
+            <div class="row">
+                <div class="col-8 bg-light border border-dark rounded"><label id="actual">0</label></div>
+                <div class="col-4 bg-light border border-dark rounded"><label id="resultado">0</label></div>
+            </div>
+
+            <div class="row">
+                <div class="col-3"><button class="btn btn-danger tecla" onclick="borrar()" id="CE">←</button></div>
+                <div class="col-3"><button class="btn btn-danger tecla" onclick="resetear()" id="C">C</button></div>
+                <div class="col-3"><button class="btn btn-danger tecla" onclick="limpiarActual()" id="CE">CE</button></div>
+                <div class="col-3"><button class="btn btn-secondary tecla" onclick="cambio()" id="cambio">±</button>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-3"><button class="btn btn-secondary tecla" onclick="cuadrado()"
+                        id="cuadrado">x<sup>y</sup></button></div>
+                <div class="col-3"><button class="btn btn-secondary tecla" onclick="raiz()" id="raiz">√</button></div>
+                <div class="col-3"><button class="btn btn-secondary tecla" onclick="porcentaje()"
+                        id="porcentaje">%</button></div>
+                <div class="col-3"><button class="btn btn-secondary tecla" onclick="fraccion()"
+                        id="franccion">1/x</button></div>
+            </div>
+            <div class="row">
+                <div class="col-3"><button class="btn btn-dark tecla" onclick="add('7')">7</button></div>
+                <div class="col-3"><button class="btn btn-dark tecla" onclick="add('8')">8</button></div>
+                <div class="col-3"><button class="btn btn-dark tecla" onclick="add('9')">9</button></div>
+                <div class="col-3"><button class="btn btn-secondary tecla" onclick="division()" id="division">÷</button>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-3"><button class="btn btn-dark tecla" onclick="add('4')">4</button></div>
+                <div class="col-3"><button class="btn btn-dark tecla" onclick="add('5')">5</button></div>
+                <div class="col-3"><button class="btn btn-dark tecla" onclick="add('6')">6</button></div>
+                <div class="col-3"><button class="btn btn-secondary tecla" onclick="multiplicacion()"
+                        id="multiplicacion">x</button></div>
+            </div>
+            <div class="row">
+                <div class="col-3"><button class="btn btn-dark tecla" onclick="add('1')">1</button></div>
+                <div class="col-3"><button class="btn btn-dark tecla" onclick="add('2')">2</button></div>
+                <div class="col-3"><button class="btn btn-dark tecla" onclick="add('3')">3</button></div>
+                <div class="col-3"><button class="btn btn-secondary tecla" onclick="resta()" id="resta">-</button>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-3"><button class="btn btn-dark tecla" onclick="add('0')">0</button></div>
+                <div class="col-3"><button class="btn btn-dark tecla" onclick="punto()" id="punto">.</button></div>
+                <div class="col-3"><button class="btn btn-success tecla" onclick="igual()" id="igual">=</button></div>
+                <div class="col-3"><button class="btn btn-secondary tecla" onclick="suma()" id="suma">+</button></div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
